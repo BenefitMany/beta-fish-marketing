@@ -1,6 +1,15 @@
 .thing-form {
   margin: 20px 0;
 }
+$palette--accent: #F09C58;
+.bf-display {
+  font-family: 'Bebas Neue';
+}
+.navbar-logo {
+  &__text {
+    color: $palette--accent;
+  }
+}
 
 #banner {
   border-bottom: none;
@@ -20,8 +29,4 @@
   text-align: center;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   background: #4393B9;
-}
-
-.navbar-text {
-  margin-left: 15px;
 }
