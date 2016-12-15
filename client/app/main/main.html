@@ -27,14 +27,39 @@
     </ul>
   </div>
 </div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header">Features:</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
-        <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}</a></li>
-      </ul>
+<div layout="column" class="samples">
+  <div layout="row">
+    <h4 flex="15" flex-offset="25">Users can leave feedback on their own</h4>
+    <div flex="30">
+      <img src="assets/images/Leave-a-comment-sample.png">
     </div>
+  </div>
+  <div layout="row" layout-align="center center" class="or-block">
+    <div class="or-block__rule"><hr/></div>
+    <p>or</p>
+    <div class="or-block__rule"><hr/></div>
+  </div>
+  <div layout="row">
+    <div flex="30" flex-offset="40">
+      <img src="assets/images/User-tests-sample.png">
+    </div>
+    <h4 flex="15">You can ask users to test specific features and flows</h4>
+  </div>
+</div>
+<div layout="column" class="align-center cta">  
+  <h2 class="bf-headline align-center">Comming summer of 2017</h2>
+  <md-divider class="cta__divider"></md-divider>
+  <div layout="row" layout-align="center" class="align-left">
+    <md-card flex="30">
+      <md-card-content>
+        <md-input-container>
+          <label>Your email</label>
+          <input type="email" aria-label="email">
+        </md-input-container>
+        <div layout="row" layout-align="center">
+          <md-button class="md-raised md-primary">Keep me posted</md-button>
+        </div>
+      </md-card-content>
+    </md-card>
   </div>
 </div>
