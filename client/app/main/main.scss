@@ -1,13 +1,17 @@
-.thing-form {
-  margin: 20px 0;
-}
 $palette--accent: #F09C58;
+body {
+  font-size: 18px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 .bf-display {
   font-family: 'Bebas Neue';
 }
 .bf-headline {
   @extend .bf-display;
-  font-size: 3.6em;
+  font-size: 3.2em;
 }
 .navbar-logo {
   &__text {
