@@ -8,6 +8,9 @@ $palette--accent: #F09C58;
 .navbar-logo {
   &__text {
     color: $palette--accent;
+    font-size: 1.4em !important;
+    padding-left: 0.4em;
+    padding-bottom: 0.2em;
   }
 }
 
