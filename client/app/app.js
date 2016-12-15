@@ -1,14 +1,13 @@
 'use strict';
 
 import angular from 'angular';
-// import ngAnimate from 'angular-animate';
+import ngAnimate from 'angular-animate';
 import ngCookies from 'angular-cookies';
 import ngResource from 'angular-resource';
 import ngSanitize from 'angular-sanitize';
-
 import uiRouter from 'angular-ui-router';
-
-// import ngMessages from 'angular-messages';
+import ngMessages from 'angular-messages';
+import ngMaterial from 'angular-material';
 
 
 import {
@@ -24,7 +23,7 @@ import util from '../components/util/util.module';
 import './app.scss';
 
 angular.module('betaFishApp', [ngCookies, ngResource, ngSanitize, uiRouter, navbar, footer, main,
-  constants, util
+  constants, util, ngAnimate, ngMessages, ngMaterial
 ])
   .config(routeConfig);
 
