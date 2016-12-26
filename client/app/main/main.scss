@@ -49,8 +49,10 @@ label {
   background: $palette--accent;
   color: #FFF;
   .bf-headline {
-    margin-top: 1.2em;
-    margin-left: 0.8em;
+    @media (min-width: 900px) {
+      margin-top: 1.2em;
+      margin-left: 0.8em;
+    }
     max-width: 360px;
     line-height: 1.2em;
   }
