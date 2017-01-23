@@ -12,9 +12,13 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  padding: 0.5em;
 }
 label {
   font-weight: 400;
+}
+[flex] {
+  display: block;
 }
 .md-button.md-raised.md-accent {
   color: #FFF;
@@ -85,6 +89,7 @@ label {
 .widget-in-app-sample {
   box-shadow: $card-shadow;
   border: $rule;
+  margin-bottom: 1em;
 }
 .bullet-point {
   &__container {
@@ -113,13 +118,13 @@ label {
   }
 }
 .or-block {
-  padding: 1em 0;
+  padding: 1em;
   color: #fff;
   p {
     padding: 0 2em;
   }
   &__rule {
-    width: 200px;
+    width: 180px;
   }
 }
 .cta {
