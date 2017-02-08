@@ -23,6 +23,7 @@ export default angular.module('betaFishApp.main', [uiRouter])
   .config(routing)
   .component('main', {
     template: require('./main.html'),
-    controller: MainController
+    controller: MainController,
+    controllerAs: '$ctrl'
   })
   .name;
