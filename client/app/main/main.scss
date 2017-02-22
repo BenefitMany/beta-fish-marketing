@@ -1,9 +1,10 @@
 $palette--accent: #F09C58;
 $palette--primary: #6A9CD0;
+$palette--bg: #FAFAFA;
 $card-shadow: 0px 2px 0px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
 $rule: thin solid rgba(0,0,0,0.12);
 html {
-  background-color: #FAFAFA;
+  background-color: $palette--bg;
 }
 body {
   font-size: 18px;
@@ -34,7 +35,18 @@ label {
 }
 .bf-headline {
   @extend .bf-display;
-  font-size: 3.2em;
+}
+h2.bf-headline {
+  font-size: 3.2em;    
+}
+h3.bf-headline {
+  font-size: 2.2em;    
+}
+h4.bf-headline {
+  font-size: 1.6em;
+}
+.inverted {
+  color: #FFF;
 }
 .bf-navbar {
   border-bottom: $rule;
@@ -128,6 +140,7 @@ label {
   color: #fff;
   p {
     padding: 0 2em;
+    @extend .bf-display;
   }
   &__rule {
     width: 180px;
