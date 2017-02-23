@@ -600,3 +600,16 @@ gulp.task('buildcontrol:openshift', function(done) {
         function() {done();}
     );
 });
+
+/********************
+ * Deploy
+ ********************/
+
+gulp.task('deploy', cb => {
+    runSequence(
+        [
+            'build',
+            'buildcontrol:heroku'
+        ], cb
+    );
+});
