@@ -17,13 +17,15 @@ import {
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
 import main from './main/main.component';
+import about from './about/about.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 
 import './app.scss';
 
-angular.module('betaFishApp', [ngCookies, ngResource, ngSanitize, uiRouter, navbar, footer, main,
-  constants, util, ngAnimate, ngMessages, ngMaterial
+angular.module('betaFishApp', [ngCookies, ngResource, ngSanitize, uiRouter, 
+	constants, util, ngAnimate, ngMessages, ngMaterial,
+	navbar, footer, main, about
 ])
   .config(routeConfig);
 

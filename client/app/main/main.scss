@@ -44,20 +44,25 @@ label {
 .align-left {
   text-align: left;
 }
-.bf-display {
+.bf-headline {
   font-family: 'Bebas Neue';
 }
-.bf-headline {
-  @extend .bf-display;
-}
 h2.bf-headline {
-  font-size: 3.2em;    
+  font-size: 2.8em;    
 }
 h3.bf-headline {
   font-size: 2.2em;    
 }
 h4.bf-headline {
   font-size: 1.6em;
+}
+.bf-display {
+  @extend .bf-headline;
+  font-size: 3.2;
+}
+.bf-page-title {
+  background: $palette--accent;
+  color: #FFF;
 }
 .inverted {
   color: #FFF;
@@ -81,11 +86,11 @@ h4.bf-headline {
     padding-bottom: 0.2em;
   }
 }
-.headline-block {
+.display-block {
   padding-top: 1.2em;
   background: $palette--accent;
   color: #FFF;
-  .bf-headline {
+  .bf-display {
     @media (min-width: 900px) {
       margin-top: 1.2em;
       margin-left: 0.8em;
