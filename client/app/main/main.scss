@@ -95,6 +95,9 @@ h4.bf-headline {
 .features-row {
   padding: 4em 0;
   background: #FFF;
+  & + .features-row {
+    padding-top: 0;
+  }
   .features-list {
     p {
       padding-top: 0.18em;
