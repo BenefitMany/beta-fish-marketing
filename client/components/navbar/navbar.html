@@ -1,6 +1,22 @@
-<md-toolbar md-scroll-shrink class="md-menu-toolbar bf-navbar">
-  <div class="md-toolbar-tools" layout="row" layout-align="start center">
-    <img flex-gt-sm="5" src="assets/images/beta-fish-navbar-mark.svg">
-    <h3 flex-gt-sm="10" class="navbar-logo__text bf-display">Beta Fish</div>
-  </h3>
-</md-toolbar>
+<div class="bf-navbar">
+	<md-toolbar md-scroll-shrink class="md-menu-toolbar bf-navbar__logo-block">
+	  <div class="md-toolbar-tools" layout="row" layout-align="start center">
+	    <img flex-gt-sm="5" src="assets/images/beta-fish-navbar-mark.svg">
+	    <h3 flex-gt-sm="10" class="navbar-logo__text bf-display">Beta Fish</h3>
+	  </div>
+	</md-toolbar>
+	<md-nav-bar
+	  md-selected-nav-item="'page1'"
+	  nav-bar-aria-label="navigation links"
+	>
+		<md-nav-item md-nav-click="goto('page1')" name="page1">
+		  Home
+		</md-nav-item>
+  	<md-nav-item md-nav-click="goto('page1')" name="page1">
+    	Features
+  	</md-nav-item>
+  	<md-nav-item md-nav-click="goto('page2')" name="page2">
+    	About
+  	</md-nav-item>
+  </md-nav-bar>
+</div>
