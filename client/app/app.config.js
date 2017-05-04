@@ -8,7 +8,7 @@ export function routeConfig($urlRouterProvider, $locationProvider, $mdThemingPro
   $locationProvider.html5Mode(true);
 
   $mdThemingProvider.definePalette('betaFishAccentColor', $mdThemingProvider.extendPalette('orange', {
-    '500': 'F09C58'
+    '500': 'FF9B4A'
   }));
 
   $mdThemingProvider.theme('default')

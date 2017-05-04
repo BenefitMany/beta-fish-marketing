@@ -1,4 +1,5 @@
-$palette--accent: #F09C58;
+$palette--accent: #FF9B4A;
+$palette--accent--hover: #FCAE4F;
 $palette--primary: #6A9CD0;
 $palette--bg: #FAFAFA;
 $shadow--level-1: 0px 2px 0px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
@@ -24,8 +25,18 @@ label {
 [flex] {
   display: block;
 }
+.md-button {
+  font-weight: $font-weight--bold !important;
+}
+.md-button.md-accent {
+  color: #FF9B4A;
+}
 .md-button.md-raised.md-accent {
   color: #FFF;
+  background-color: $palette--accent !important;
+  &:not([disabled]):hover {
+    background-color: $palette--accent--hover !important;
+  }
 }
 .align-center {
   text-align: center;
@@ -58,9 +69,6 @@ h4.bf-headline {
   &__tabs {
     .md-nav-bar {
       box-shadow: $shadow--level-2;
-      .md-button {
-        font-weight: $font-weight--bold !important;
-      }
     }
   }
 }
