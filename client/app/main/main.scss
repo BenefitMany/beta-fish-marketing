@@ -1,8 +1,11 @@
 $palette--accent: #F09C58;
 $palette--primary: #6A9CD0;
 $palette--bg: #FAFAFA;
-$card-shadow: 0px 2px 0px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+$shadow--level-1: 0px 2px 0px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+$shadow--level-2: 0 0 4px 0 rgba(0,0,0,0.12), 0 4px 4px 0 rgba(0,0,0,0.24);
 $rule: thin solid rgba(0,0,0,0.12);
+$font-weight--regular: 400;
+$font-weight--bold: 600;
 html {
   background-color: $palette--bg;
 }
@@ -16,7 +19,7 @@ img {
   padding: 0.5em;
 }
 label {
-  font-weight: 400;
+  font-weight: $font-weight--regular;
 }
 [flex] {
   display: block;
@@ -49,16 +52,24 @@ h4.bf-headline {
   color: #FFF;
 }
 .bf-navbar {
-  padding-bottom: 3em;
   &__logo-block {
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
+  }
+  &__tabs {
+    .md-nav-bar {
+      box-shadow: $shadow--level-2;
+      .md-button {
+        font-weight: $font-weight--bold !important;
+      }
+    }
   }
 }
+
 .navbar-logo {
   &__text {
     color: $palette--accent;
     font-size: 1.4em !important;
-    padding-left: 0.3em;
+    padding-left: 0em;
     padding-bottom: 0.2em;
   }
 }
@@ -76,7 +87,7 @@ h4.bf-headline {
   }
   aside {
     margin-top: 1.2em;
-    font-weight: 600;
+    font-weight: $font-weight--bold;
     font-size: 1.2em;
     max-width: 360px;
   }
@@ -107,7 +118,7 @@ h4.bf-headline {
   }
 }
 .widget-in-app-sample {
-  box-shadow: $card-shadow;
+  box-shadow: $shadow--level-1;
   border: $rule;
   margin-bottom: 1em;
 }
