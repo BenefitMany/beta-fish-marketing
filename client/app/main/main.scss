@@ -189,4 +189,15 @@ h4.bf-headline {
   &__divider {
     margin: 1em 2em;
   }
+  &__button {
+    padding: 0.25em 1em;
+    font-size: 1.75rem;
+  }
+  .bf-headline {
+    margin-bottom: 1em;
+  }
+}
+.contact {
+  padding-left: 2em;
+  background: #FFF;
 }
