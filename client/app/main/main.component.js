@@ -4,19 +4,13 @@ import routing from './main.routes';
 
 export class MainController {
 
-  awesomeThings = [];
-
   /*@ngInject*/
   constructor($http) {
     this.$http = $http;
   }
 
-  $onInit() {
-    this.$http.get('/api/things')
-      .then(response => {
-        this.awesomeThings = response.data;
-      });
-  }
+  $onInit() {}
+
 }
 
 export default angular.module('betaFishApp.main', [uiRouter])
