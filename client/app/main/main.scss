@@ -25,6 +25,9 @@ label {
 [flex] {
   display: block;
 }
+[ng-click]:hover {
+  cursor: pointer;
+}
 .md-button {
   font-weight: $font-weight--bold !important;
 }
@@ -43,6 +46,9 @@ label {
 }
 .align-left {
   text-align: left;
+}
+.align-right {
+  text-align: right;
 }
 .bf-headline {
   font-family: 'Bebas Neue';
@@ -64,6 +70,10 @@ h4.bf-headline {
   background: $palette--accent;
   color: #FFF;
   padding: 1em 2em 1em;
+}
+.link--secondary {
+  color: rgba(0,0,0,0.87);
+  text-decoration: underline;
 }
 .reading-content {
   padding-top: 2em;
